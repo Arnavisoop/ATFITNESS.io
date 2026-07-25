@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AT Fitness Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="dashboard">
+        <header>
+            <h1>AT FITNESS</h1>
+            <p>Push/Pull/Legs Workout Tracker</p>
+        </header>
+
+        <div class="widgets-grid">
+            <!-- Schedule Widget -->
+            <div class="widget schedule-widget">
+                <div class="widget-header">
+                    <h2>Workout Schedule</h2>
+                </div>
+                <div class="widget-content">
+                    <div id="schedule-days" class="schedule-days">
+                        <!-- Days will be populated here -->
+                    </div>
+                </div>
+            </div>
+
+            <!-- Workout Widget -->
+            <div class="widget workout-widget">
+                <div class="widget-header">
+                    <h2 id="workout-day-title">Select a Day</h2>
+                </div>
+                <div class="widget-content">
+                    <div id="workout-exercises" class="workout-exercises">
+                        <!-- Exercises will be populated here -->
+                    </div>
+                </div>
+            </div>
+
+            <!-- Timer Widget -->
+            <div class="widget timer-widget">
+                <div class="widget-header">
+                    <h2>Rest Timer</h2>
+                </div>
+                <div class="widget-content">
+                    <div class="timer-display" id="timer-display">00:00</div>
+                    <div class="timer-controls">
+                        <button id="timer-start">Start</button>
+                        <button id="timer-pause">Pause</button>
+                        <button id="timer-reset">Reset</button>
+                    </div>
+                    <input type="number" id="timer-input" placeholder="Seconds" value="60">
+                    <label for="timer-input">Set time (seconds)</label>
+                </div>
+            </div>
+
+            <!-- Stats Widget -->
+            <div class="widget stats-widget">
+                <div class="widget-header">
+                    <h2>Weekly Stats</h2>
+                </div>
+                <div class="widget-content">
+                    <div id="stats-content">
+                        <!-- Stats will be populated here -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
